@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,8 +11,20 @@
     tools:context=".MainActivity">
 
     <com.example.kobe.myapplication.ShiningStar
+        android:id="@+id/myStar"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/sum"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/myStar"/>
+   <Button
+       android:id="@+id/click"
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       android:layout_below="@+id/myStar"
+       android:layout_toRightOf="@+id/sum"/>
 
-</LinearLayout>
+</RelativeLayout>

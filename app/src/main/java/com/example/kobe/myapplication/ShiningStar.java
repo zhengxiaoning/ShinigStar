@@ -2,24 +2,32 @@ package com.example.kobe.myapplication;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.util.AttributeSet;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
-
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class ShiningStar extends View {
+        Resources resources = this.getResources();
+        DisplayMetrics dm = resources.getDisplayMetrics();
+        int width = dm.widthPixels;
+        int height = dm.heightPixels;
+        int tmp=(width-height)/2;
     //星星的坐标及大小
-    private static final int[][] starPosition = new int[][]{
-            {80, 80, 66}, {160, 80, 80}, {240, 160, 100}, {120, 240, 120}, {360, 480, 66}, {600, 600, 120}, {720, 500, 120},
-            {360, 100, 66}, {600, 160, 120}, {720, 240, 120}, {860, 80, 80}
+    private  final int[][] starPosition = new int[][] {
+            {tmp,80,80}, {tmp+300,600,66},{tmp+180,200,77},{tmp,400,100},{tmp+180,688,105},
+            {width/2,height/4,88},{width/2,700,90},{width/2,60,66},
+            {width-tmp,80,110}, {width-(tmp+100),500,66},{width-(tmp+180),300,77},{width-tmp,660,80}
+
     };
     //星星存储器
     private List<Star> stars = new ArrayList<Star>();

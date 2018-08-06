@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="cloudComments">给云学习app提建议</string>
+    <string name="teacherComments">给老师提建议</string>
+    <string name="coursesComments">给教学内容提建议</string>
+    <string name="otherComments">其他建议</string>
+    <string name="hintComments"> 您可以在这里留下您的问题或者建议，也可以通过右侧“上传截图”方便我们快速了解问题。</string>
+    <string name="commitComments">提   交</string>
 </resources>

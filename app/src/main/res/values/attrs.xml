@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- RoundedImageView -->
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension"/>
+        <attr name="border_width1" format="dimension"/>
+        <attr name="border_color1" format="color"/>
+        <attr name="mutate_background" format="boolean"/>
+        <attr name="oval" format="boolean"/>
+        <attr name="android:scaleType"/>
+    </declare-styleable>
+</resources>
