@@ -159,6 +159,8 @@ public class CommentsAndFeedbackActivity extends AppCompatActivity implements Vi
                     img2IsShow=false;
                 }
                 break;
+            case R.id.imgShow3:
+                break;
         }
 
     }
