@@ -159,12 +159,6 @@ public class CommentsAndFeedbackActivity extends AppCompatActivity implements Vi
                     img2IsShow=false;
                 }
                 break;
-            case R.id.imgShow3:
-                if(imageView3!=null){
-                    imageView3.setImageResource(R.drawable.load_layout_shape);
-                    img3IsShow=false;
-                }
-                break;
         }
 
     }
