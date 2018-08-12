@@ -11,10 +11,12 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private TextView textView;
     private Button button;
+    int i=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+       add();
+    }
+
+    @Override
+    protected void onResume() {
+        add1();
+        super.onResume();
     }
 
     @Override
@@ -43,5 +52,11 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("hh", "onActivityResult: " + data.getStringExtra("c"));
             }
         }
+    }
+    private void add(){
+        Toast.makeText(MainActivity.this,"add",Toast.LENGTH_SHORT).show();
+    }
+    private void add1(){
+        Toast.makeText(MainActivity.this,"addOnResume",Toast.LENGTH_SHORT).show();
     }
 }
